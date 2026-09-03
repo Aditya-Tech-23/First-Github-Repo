@@ -74,7 +74,7 @@ def highest():
 		f=open("Expense tracker.txt")
 		lines=f.readlines()
 		f.close()
-		greatest_calculate=[]
+		greatest_calculate=[]#to store list of numbers among which highest is to be found 
 		for i in lines:
 			greatest_calculate.append(int(i[len(i)-2:i.index(":"):-1][::-1]))
 		print(f"Highest expense : {max(greatest_calculate)}")
