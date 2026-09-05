@@ -15,7 +15,6 @@ def chance():
         print()
         print()
         if ch=="Yes":
-            
             gaming()
         elif ch=="No":
             print()
