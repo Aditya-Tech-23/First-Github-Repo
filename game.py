@@ -1,5 +1,4 @@
 import random
-
 ch=""
 def chance():
     global ch
@@ -27,7 +26,6 @@ def chance():
             print("~"*150)
             print()
             break
-            
         else:
             print("Invalid Input --> Enter Yes/No")
 
