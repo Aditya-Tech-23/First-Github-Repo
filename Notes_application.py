@@ -1,6 +1,6 @@
 print("*"*150)
 print()
-print(f"{'NOTES APP':=^150}")
+print(f"{'NOTES APP':-^150}")
 print()
 print("*"*150)
 
@@ -79,5 +79,10 @@ while True:
         
         edit()
     if int(a)==4:
-        
+        print()
+        print("*"*150)
+        print()
+        print(f"{'THANK YOU':^150}")
+        print()
+        print("*"*150)
         break
