@@ -47,7 +47,7 @@ def open_file():
                                 f.close()
                 except ValueError:
                         print()
-                        print(f"{'Please enter numbers only':|=|^150} ")
+                        print(f"{'Please enter numbers only':=^150} ")
                         print()
                 print()
                 print("_"*150)
@@ -80,7 +80,7 @@ def view():
 
 
         for i in range(0,len(names)):
-                f=open(f"{names[i]}","r")
+                f=open(f"{names[i]}.txt","r")
                 content=f.read()
                 print(f"{i+1}. {names[i]}")
                 print(f"Content: {content}")
@@ -134,7 +134,7 @@ while True:
         except ValueError:
                 
                 print()
-                print(f"{'Please enter numbers only':|=|^150} ")
+                print(f"{'Please enter numbers only':=^150} ")
                 print()
                 
                 
