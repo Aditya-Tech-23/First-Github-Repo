@@ -42,6 +42,8 @@ def open_file():
                                                 f.write(f"{t[:len(t)-9]}")
                                                 print("File Saved Successfully")
                                                 break
+                                        else:
+                                                f.write(t+"\n")
                                 f.close()
                 except ValueError:
                         print()
