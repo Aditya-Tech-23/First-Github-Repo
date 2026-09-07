@@ -101,6 +101,7 @@ def delete_notes():
                         f.close()
                         print("Notes deleted successfully")
                         print()
+                        
 while True:
         print()
         print("-x-"*50)
@@ -109,7 +110,8 @@ while True:
         print("2. Open File")
         print("3. Edit File")
         print("4. View files")
-        print("5. Exit")
+        print("5. Delete Notes")
+        print("6. Exit")
         print()
         print("-"*150)
         print()
@@ -124,6 +126,8 @@ while True:
                 if a==4:
                    view()
                 if a==5:
+                   delete_notes()
+                if a==6:
                    print()
                    print("*"*150)
                    print()
