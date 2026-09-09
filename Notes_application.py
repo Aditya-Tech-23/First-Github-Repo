@@ -42,10 +42,12 @@ def open_file():
                                                 f.write(f"{t[:len(t)-9]}")
                                                 print("File Saved Successfully")
                                                 break
+                                        else:
+                                                f.write(t+"\n")
                                 f.close()
                 except ValueError:
                         print()
-                        print(f"{'Please enter numbers only':|=|^150} ")
+                        print(f"{'Please enter numbers only':=^150} ")
                         print()
                 print()
                 print("_"*150)
@@ -78,7 +80,7 @@ def view():
 
 
         for i in range(0,len(names)):
-                f=open(f"{names[i]}","r")
+                f=open(f"{names[i]}.txt","r")
                 content=f.read()
                 print(f"{i+1}. {names[i]}")
                 print(f"Content: {content}")
@@ -99,6 +101,7 @@ def delete_notes():
                         f.close()
                         print("Notes deleted successfully")
                         print()
+                        
 while True:
         print()
         print("-x-"*50)
@@ -107,7 +110,8 @@ while True:
         print("2. Open File")
         print("3. Edit File")
         print("4. View files")
-        print("5. Exit")
+        print("5. Delete Notes")
+        print("6. Exit")
         print()
         print("-"*150)
         print()
@@ -122,6 +126,8 @@ while True:
                 if a==4:
                    view()
                 if a==5:
+                   delete_notes()
+                if a==6:
                    print()
                    print("*"*150)
                    print()
@@ -132,7 +138,7 @@ while True:
         except ValueError:
                 
                 print()
-                print(f"{'Please enter numbers only':|=|^150} ")
+                print(f"{'Please enter numbers only':=^150} ")
                 print()
                 
                 
